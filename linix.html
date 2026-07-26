@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKI WORLDWIDE - Études à l'Étranger 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        skyDark: '#0f172a',
+                        skyBlue: '#0284c7',
+                        accentGold: '#eab308',
+                        successGreen: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 1. HEADER / NAVIGATION -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-skyBlue rounded-xl flex items-center justify-center text-white shadow-md shadow-skyBlue/30">
+                    <i class="fas fa-globe-americas text-xl"></i>
+                </div>
+                <div class="text-2xl font-black text-skyDark tracking-tight">IKI <span class="text-skyBlue">WORLDWIDE</span></div>
+            </div>
+            <div class="hidden lg:flex space-x-8 font-medium text-slate-600">
+                <a href="#destinations" class="hover:text-skyBlue transition">Destinations</a>
+                <a href="#explorer" class="hover:text-skyBlue transition">Universités & Villes</a>
+                <a href="#services" class="hover:text-skyBlue transition">Nos Services</a>
+                <a href="#pricing" class="hover:text-skyBlue transition">Packs</a>
+            </div>
+            <div>
+                <a href="https://wa.me/212661862506" target="_blank" class="bg-successGreen hover:bg-emerald-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-emerald-500/20 transition flex items-center gap-2 text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i> Évaluer mon dossier
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-skyDark via-slate-900 to-skyDark text-white py-24 lg:py-32 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0284c7_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <span class="bg-skyBlue/20 text-skyBlue border border-skyBlue/30 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Inscriptions Ouvertes 2026 / 2027</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black mt-6 leading-tight">
+                    Votre Passport pour les <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400">Grandes Universités</span> Mondiales
+                </h1>
+                <p class="text-lg text-slate-300 mt-6 max-w-xl">
+                    De l'orientation initiale au choix de la filière, jusqu'à l'obtention de votre visa d'études. Nous sécurisons votre admission internationale.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#explorer" class="bg-skyBlue hover:bg-sky-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-skyBlue/30 transition transform hover:-translate-y-0.5">Explorer les Universités</a>
+                    <a href="#destinations" class="bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl border border-white/10 transition">Voir les الوجهات</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md p-6 rounded-2xl">
+                    <div class="text-3xl font-black text-accentGold">98%</div>
+                    <div class="text-sm font-medium text-slate-400 mt-1">Taux d'acceptation des visas</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md p-6 rounded-2xl mt-6">
+                    <div class="text-3xl font-black text-sky-400">+250</div>
+                    <div class="text-sm font-medium text-slate-400 mt-1">Universités Partenaires</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md p-6 rounded-2xl">
+                    <div class="text-3xl font-black text-emerald-400">A de Z</div>
+                    <div class="text-sm font-medium text-slate-400 mt-1">Accompagnement complet</div>
+                </div>
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md p-6 rounded-2xl mt-6">
+                    <div class="text-3xl font-black text-purple-400">2026</div>
+                    <div class="text-sm font-medium text-slate-400 mt-1">Procédures Actualisées</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TOP DESTINATIONS (6 Countries Grid) -->
+    <section id="destinations" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-black text-skyDark">Nos 6 Destinations Phares</h2>
+            <p class="text-slate-500 mt-2 max-w-xl mx-auto">Cliquez sur une destination ci-dessous ou utilisez l'explorateur pour voir les universités et détails.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- France -->
+            <div onclick="switchCountry('france')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-skyBlue">
+                <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">FRANCE</h3>
+                        <p class="text-xs text-slate-400">Plateforme Campus France</p>
+                    </div>
+                    <div class="text-2xl text-sky-400"><i class="fas fa-landmark"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Découvrez les universités publiques, grandes écoles, et procédures de visa.</p>
+                    <span class="text-xs font-bold text-skyBlue block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+
+            <!-- Canada -->
+            <div onclick="switchCountry('canada')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-red-500">
+                <div class="p-6 bg-red-950 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">CANADA</h3>
+                        <p class="text-xs text-red-300">Universités & CEGEP</p>
+                    </div>
+                    <div class="text-2xl text-red-400"><i class="fas fa-maple-leaf"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Permis d'études, universités anglophones et francophones (Québec, Ontario...).</p>
+                    <span class="text-xs font-bold text-red-500 block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+
+            <!-- Espagne -->
+            <div onclick="switchCountry('espagne')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-amber-500">
+                <div class="p-6 bg-amber-950 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">ESPAGNE</h3>
+                        <p class="text-xs text-amber-300">Homologation UNEDAsiss</p>
+                    </div>
+                    <div class="text-2xl text-amber-400"><i class="fas fa-sun"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Études en espagnol ou en anglais avec des frais de scolarité très modérés.</p>
+                    <span class="text-xs font-bold text-amber-500 block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+
+            <!-- Allemagne -->
+            <div onclick="switchCountry('allemagne')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-yellow-500">
+                <div class="p-6 bg-slate-800 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">ALLEMAGNE</h3>
+                        <p class="text-xs text-slate-400">Universités Publiques</p>
+                    </div>
+                    <div class="text-2xl text-yellow-400"><i class="fas fa-graduation-cap"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Scolarité gratuite dans les universités publiques avec exigences linguistiques.</p>
+                    <span class="text-xs font-bold text-yellow-600 block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+
+            <!-- Turquie (NEW) -->
+            <div onclick="switchCountry('turquie')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-purple-500">
+                <div class="p-6 bg-purple-950 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">TURQUIE</h3>
+                        <p class="text-xs text-purple-300">Admissions Directes 2026</p>
+                    </div>
+                    <div class="text-2xl text-purple-400"><i class="fas fa-mosque"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Programmes en Anglais, diplômes reconnus en Europe, et coût de vie très bas.</p>
+                    <span class="text-xs font-bold text-purple-500 block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+
+            <!-- Chine (NEW) -->
+            <div onclick="switchCountry('chine')" class="cursor-pointer bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition group border-b-4 border-b-emerald-500">
+                <div class="p-6 bg-emerald-950 text-white flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">CHINE</h3>
+                        <p class="text-xs text-emerald-300">Bourses du Gouvernement (CSC)</p>
+                    </div>
+                    <div class="text-2xl text-emerald-400"><i class="fas fa-dragon"></i></div>
+                </div>
+                <div class="p-6 text-sm text-slate-600">
+                    <p>Hub technologique mondial, bourses d'excellence complètes (Logement + Argent de poche).</p>
+                    <span class="text-xs font-bold text-emerald-500 block mt-4">Voir les détails →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. INTERACTIVE EXPLORER SECTION (السيستم التفاعلي الجديد) -->
+    <section id="explorer" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-skyBlue font-bold uppercase tracking-widest text-sm">Base de données 2026</span>
+                <h2 class="text-3xl lg:text-4xl font-black mt-2">Explorateur des Villes & Universités</h2>
+                <p class="text-slate-400 mt-2">Sélectionnez un pays pour charger dynamiquement ses grandes villes et universités partenaires.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="switchCountry('france')" id="btn-france" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-skyBlue text-white">France</button>
+                <button onclick="switchCountry('canada')" id="btn-canada" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300">Canada</button>
+                <button onclick="switchCountry('espagne')" id="btn-espagne" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300">Espagne</button>
+                <button onclick="switchCountry('allemagne')" id="btn-allemagne" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300">Allemagne</button>
+                <button onclick="switchCountry('turquie')" id="btn-turquie" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300">Turquie</button>
+                <button onclick="switchCountry('chine')" id="btn-chine" class="country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300">Chine</button>
+            </div>
+
+            <!-- Dynamic Content Box -->
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Col 1: Villes Clés -->
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                        <h4 class="text-xl font-bold text-accentGold mb-4 flex items-center gap-2">
+                            <i class="fas fa-map-marked-alt"></i> Villes Clés & Infos
+                        </h4>
+                        <div id="explorer-villes" class="space-y-4 text-sm text-slate-300">
+                            <!-- Loaded via JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Col 2 & 3: Universités Recommandées -->
+                    <div class="lg:col-span-2 bg-white/5 p-6 rounded-2xl border border-white/5">
+                        <h4 class="text-xl font-bold text-sky-400 mb-4 flex items-center gap-2">
+                            <i class="fas fa-university"></i> Universités & Établissements Clés
+                        </h4>
+                        <div id="explorer-universites" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Loaded via JavaScript -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. OUR SERVICES -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-black text-skyDark">Notre Accompagnement de A à Z</h2>
+                <p class="text-slate-500 mt-2">Nous ne faisons pas que postuler, nous construisons votre départ.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center text-skyBlue text-xl font-bold mb-6"><i class="fas fa-user-compass"></i></div>
+                    <h3 class="text-xl font-bold text-skyDark mb-3">1. Orientation Professionnelle</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Analyse fine de votre profil scolaire, de vos ambitions et choix des filières à fort taux d'employabilité.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-accentGold text-xl font-bold mb-6"><i class="fas fa-file-invoice"></i></div>
+                    <h3 class="text-xl font-bold text-skyDark mb-3">2. Gestion des Admissions</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Création des comptes sur les plateformes internationales, traduction certifiée et lettres de motivation percutantes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-successGreen text-xl font-bold mb-6"><i class="fas fa-passport"></i></div>
+                    <h3 class="text-xl font-bold text-skyDark mb-3">3. Préparation Visa & Logement</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Simulation d'entretiens consulaires, vérification des blocs financiers et recherche de logements étudiants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PRICING / PACKS -->
+    <section id="pricing" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-black text-skyDark">Des Tarifs Transparents et Adaptés</h2>
+            <p class="text-slate-500 mt-2">Choisissez le niveau de sérénité dont vous avez besoin.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <!-- Pack Basic -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+                <div>
+                    <h4 class="text-lg font-bold text-slate-700">Pack ACCÈS</h4>
+                    <p class="text-xs text-slate-400 mt-1">Idéal pour 1 seule destination</p>
+                    <div class="mt-6 border-t pt-6 space-y-4 text-sm text-slate-600">
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-successGreen mt-1"></i> <span>Création de compte plateforme officielle</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-successGreen mt-1"></i> <span>Suivi de 3 choix d'universités</span></div>
+                    </div>
+                </div>
+                <a href="https://wa.me/212661862506" class="block text-center mt-8 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 rounded-xl transition">Choisir ce pack</a>
+            </div>
+            <!-- Pack Premium -->
+            <div class="bg-white border-2 border-skyBlue rounded-3xl p-8 shadow-xl flex flex-col justify-between relative transform lg:scale-105">
+                <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-skyBlue text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Recommandé</span>
+                <div>
+                    <h4 class="text-lg font-bold text-skyDark">Pack GLOBAL SÉRÉNITÉ</h4>
+                    <p class="text-xs text-skyBlue mt-1">Multi-destinations & Suivi complet</p>
+                    <div class="mt-6 border-t pt-6 space-y-4 text-sm text-slate-600">
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-skyBlue mt-1"></i> <span>Candidatures illimitées (Europe, Turquie, Canada)</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-skyBlue mt-1"></i> <span>Traduction certifiée de l'ensemble des documents</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-skyBlue mt-1"></i> <span>Coaching intensif aux entretiens de visa</span></div>
+                    </div>
+                </div>
+                <a href="https://wa.me/212661862506" class="block text-center mt-8 bg-skyBlue hover:bg-sky-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-skyBlue/20 transition">Obtenir un devis</a>
+            </div>
+            <!-- Pack Bourse -->
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+                <div>
+                    <h4 class="text-lg font-bold text-slate-700">Pack ÉLITE & BOURSES</h4>
+                    <p class="text-xs text-slate-400 mt-1 font-medium text-purple-600">Chine & Profils d'excellence</p>
+                    <div class="mt-6 border-t pt-6 space-y-4 text-sm text-slate-600">
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-purple-600 mt-1"></i> <span>Dossiers complets de bourses d'État (Ex: CSC Chine)</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check text-purple-600 mt-1"></i> <span>Exonération totale des frais de scolarité cibles</span></div>
+                    </div>
+                </div>
+                <a href="https://wa.me/212661862506" class="block text-center mt-8 bg-slate-900 hover:bg-black text-white font-bold py-3 rounded-xl transition">Prendre RDV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-skyDark text-white py-12 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
+            <div>
+                <div class="text-2xl font-black tracking-tight">IKI <span class="text-skyBlue">WORLDWIDE</span></div>
+                <p class="text-xs text-slate-400 mt-1">Cabinet d'accompagnement et de conseil en mobilité internationale.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-300">
+                <a href="mailto:worldwide@iki-tawjih.ma" class="hover:text-white flex items-center gap-2"><i class="fas fa-envelope text-skyBlue"></i> worldwide@iki-tawjih.ma</a>
+                <a href="tel:+212661862506" class="hover:text-white flex items-center gap-2"><i class="fas fa-phone text-skyBlue"></i> +212 661-862506</a>
+            </div>
+        </div>
+        <div class="text-center text-xs text-slate-500 mt-6">
+            &copy; 2026 IKI WORLDWIDE. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- DATA & INTERACTIVE LOGIC (JavaScript) -->
+    <script>
+        // قاعدة البيانات الكاملة لكل دولة والمدن والجامعات ديالها لعام 2026
+        const countryData = {
+            france: {
+                villes: [
+                    { name: "Paris", info: "Capitale académique, coût de vie élevé, grand réseau de transport." },
+                    { name: "Lyon", info: "Excellente vie étudiante, hub d'ingénierie et de commerce." },
+                    { name: "Toulouse", info: "Capitale européenne de l'aéronautique, climat agréable." }
+                ],
+                universites: [
+                    { name: "Sorbonne Université", desc: "Lettres, Médecine, Sciences (Paris)" },
+                    { name: "Université de Lyon", desc: "Grand pôle pluridisciplinaire public" },
+                    { name: "Insa Toulouse", desc: "Grande école d'ingénieurs publique" },
+                    { name: "HEC Paris", desc: "Top école de management mondiale" }
+                ]
+            },
+            canada: {
+                villes: [
+                    { name: "Montréal", info: "Francophone, pôle d'intelligence artificielle, dynamique." },
+                    { name: "Toronto", info: "Anglophone, capitale économique, opportunités de carrière énormes." },
+                    { name: "Québec", info: "Sécurisée, frais de scolarité avantageux pour les Marocains via accords." }
+                ],
+                universites: [
+                    { name: "Université de Montréal (UdeM)", desc: "Excellence francophone au Québec" },
+                    { name: "McGill University", desc: "Université anglophone de renommée mondiale" },
+                    { name: "Université Laval", desc: "Située à Québec, très forte en recherche" },
+                    { name: "Concordia University", desc: "Pôle dynamique au centre-ville de Montréal" }
+                ]
+            },
+            espagne: {
+                villes: [
+                    { name: "Madrid", info: "Capitale vibrante, universités publiques massives." },
+                    { name: "Barcelone", info: "Hub d'innovation, idéal pour le commerce et le design." },
+                    { name: "Valence", info: "Coût de vie bas, très bon cadre d'études ensoleillé." }
+                ],
+                universites: [
+                    { name: "Universidad Complutense de Madrid", desc: "La plus grande université publique" },
+                    { name: "Universitat de Barcelona", desc: "Leader en recherche en Catalogne" },
+                    { name: "Universidad de Valencia", desc: "Très demandée par les étudiants internationaux" },
+                    { name: "IE Business School", desc: "École de commerce d'élite mondiale" }
+                ]
+            },
+            allemagne: {
+                villes: [
+                    { name: "Berlin", info: "Capitale des startups, vie culturelle et internationale." },
+                    { name: "Munich", info: "Pôle technologique (BMW, Siemens), coût de vie important." },
+                    { name: "Aachen (Aix-la-Chapelle)", info: "La ville des ingénieurs par excellence." }
+                ],
+                universites: [
+                    { name: "TU Berlin", desc: "Université Technique de premier plan" },
+                    { name: "LMU München", desc: "Excellence en sciences et médecine" },
+                    { name: "RWTH Aachen", desc: "La meilleure université d'ingénierie d'Allemagne" },
+                    { name: "Université de Heidelberg", desc: "La plus ancienne et prestigieuse en sciences" }
+                ]
+            },
+            turquie: {
+                villes: [
+                    { name: "Istanbul", info: "Pont entre l'Europe et l'Asie, universités ultra-modernes." },
+                    { name: "Ankara", info: "Capitale politique, calme et très universitaire." },
+                    { name: "Izmir", info: "Ville côtière moderne, style de vie européen." }
+                ],
+                universites: [
+                    { name: "Istanbul Technical University (ITU)", desc: "Excellence publique en ingénierie" },
+                    { name: "Koç University", desc: "Université privée d'élite, cours 100% en Anglais" },
+                    { name: "Middle East Technical University (METU)", desc: "Basée à Ankara, réputation internationale" },
+                    { name: "Bahçeşehir University (BAU)", desc: "Située au cœur d'Istanbul, très internationale" }
+                ]
+            },
+            chine: {
+                villes: [
+                    { name: "Pékin (Beijing)", info: "Capitale politique et culturelle, universités n°1 du pays." },
+                    { name: "Shanghai", info: "Capitale financière mondiale, ultra-futuriste." },
+                    { name: "Shenzhen", info: "La Silicon Valley chinoise, opportunités tech infinies." }
+                ],
+                universites: [
+                    { name: "Tsinghua University", desc: "Classée n°1 en Asie (Ingénierie & Tech)" },
+                    { name: "Peking University", desc: "Prestige absolu en Lettres, Droit et Sciences" },
+                    { name: "Fudan University", desc: "Située à Shanghai, très ouverte à l'international" },
+                    { name: "Zhejiang University", desc: "Leader en innovation et entrepreneuriat tech" }
+                ]
+            }
+        };
+
+        // دالة تغيير بيانات الدول ديناميكياً
+        function switchCountry(countryKey) {
+            const data = countryData[countryKey];
+            if (!data) return;
+
+            // 1. تحديث أزرار التبديل (Active States)
+            document.querySelectorAll('.country-btn').forEach(btn => {
+                btn.className = "country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-white/10 hover:bg-white/20 text-slate-300";
+            });
+            const activeBtn = document.getElementById(`btn-${countryKey}`);
+            if (activeBtn) {
+                activeBtn.className = "country-btn px-5 py-3 rounded-xl font-bold text-sm transition bg-skyBlue text-white shadow-lg shadow-skyBlue/30";
+            }
+
+            // 2. شحن المدن
+            const villesContainer = document.getElementById('explorer-villes');
+            villesContainer.innerHTML = data.villes.map(v => `
+                <div class="border-l-2 border-accentGold pl-3 py-1">
+                    <strong class="text-white block text-base">${v.name}</strong>
+                    <p class="text-xs text-slate-400 mt-1">${v.info}</p>
+                </div>
+            `).join('');
+
+            // 3. شحن الجامعات
+            const univsContainer = document.getElementById('explorer-universites');
+            univsContainer.innerHTML = data.universites.map(u => `
+                <div class="bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition">
+                    <h5 class="font-bold text-white text-sm flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-skyBlue text-xs"></i> ${u.name}
+                    </h5>
+                    <p class="text-xs text-slate-400 mt-1">${u.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        // تشغيل كود دولة فرنسا كحالة افتراضية عند فتح الموقع لأول مرة
+        document.addEventListener("DOMContentLoaded", () => {
+            switchCountry('france');
+        });
+    </script>
+</body>
+</html>
